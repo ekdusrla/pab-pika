@@ -1,3 +1,4 @@
+import os
 from datasets import load_dataset
 import math_verify
 import random
@@ -26,7 +27,7 @@ class MathDatasetLoader(BaseDatasetLoader):
         self.logger = logger
         self.config = config
         if self.config.get("decomposed", False):
-            with open("dataset/MATH-500/decomposed_questions.json", "r", encoding="utf-8") as f:
+            with open(os.getenv("MATH_DECOMPOSED_PATH", "dataset/MATH-500/decomposed_questions.json"), "r", encoding="utf-8") as f:
                 decomposed = json.load(f)
             self.dataset = decomposed['stats']
         else:

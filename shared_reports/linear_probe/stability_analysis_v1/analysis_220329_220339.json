@@ -1,0 +1,1338 @@
+{
+  "passed": true,
+  "no_inference_or_refit": true,
+  "request_checks": [
+    {
+      "session": "warm",
+      "order": 0,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "same_seed",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 139,
+        "latency_seconds": 10.51597
+      }
+    },
+    {
+      "session": "warm",
+      "order": 1,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "same_seed",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 226,
+        "latency_seconds": 9.898582
+      }
+    },
+    {
+      "session": "warm",
+      "order": 2,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "same_seed",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 287,
+        "latency_seconds": 6.256432
+      }
+    },
+    {
+      "session": "warm",
+      "order": 3,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "same_seed",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 188,
+        "latency_seconds": 4.386997
+      }
+    },
+    {
+      "session": "warm",
+      "order": 4,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "same_seed",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 290,
+        "latency_seconds": 12.101262
+      }
+    },
+    {
+      "session": "warm",
+      "order": 5,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "different_seed",
+      "round": 0,
+      "seed": 43,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 136,
+        "latency_seconds": 3.370387
+      }
+    },
+    {
+      "session": "warm",
+      "order": 6,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "different_seed",
+      "round": 0,
+      "seed": 43,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 239,
+        "latency_seconds": 5.37819
+      }
+    },
+    {
+      "session": "warm",
+      "order": 7,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "different_seed",
+      "round": 0,
+      "seed": 43,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 290,
+        "latency_seconds": 6.320004
+      }
+    },
+    {
+      "session": "warm",
+      "order": 8,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "different_seed",
+      "round": 0,
+      "seed": 43,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 205,
+        "latency_seconds": 4.710539
+      }
+    },
+    {
+      "session": "warm",
+      "order": 9,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "different_seed",
+      "round": 0,
+      "seed": 43,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 301,
+        "latency_seconds": 6.589411
+      }
+    },
+    {
+      "session": "warm",
+      "order": 10,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "different_seed",
+      "round": 1,
+      "seed": 44,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 138,
+        "latency_seconds": 3.388241
+      }
+    },
+    {
+      "session": "warm",
+      "order": 11,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "different_seed",
+      "round": 1,
+      "seed": 44,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 256,
+        "latency_seconds": 5.734918
+      }
+    },
+    {
+      "session": "warm",
+      "order": 12,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "different_seed",
+      "round": 1,
+      "seed": 44,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 291,
+        "latency_seconds": 6.329729
+      }
+    },
+    {
+      "session": "warm",
+      "order": 13,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "different_seed",
+      "round": 1,
+      "seed": 44,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 191,
+        "latency_seconds": 4.453214
+      }
+    },
+    {
+      "session": "warm",
+      "order": 14,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "different_seed",
+      "round": 1,
+      "seed": 44,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 305,
+        "latency_seconds": 6.665079
+      }
+    },
+    {
+      "session": "warm",
+      "order": 15,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "same_seed",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 139,
+        "latency_seconds": 3.402628
+      }
+    },
+    {
+      "session": "warm",
+      "order": 16,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "same_seed",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 226,
+        "latency_seconds": 5.155938
+      }
+    },
+    {
+      "session": "warm",
+      "order": 17,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "same_seed",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 287,
+        "latency_seconds": 6.238802
+      }
+    },
+    {
+      "session": "warm",
+      "order": 18,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "same_seed",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 188,
+        "latency_seconds": 4.459303
+      }
+    },
+    {
+      "session": "warm",
+      "order": 19,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "same_seed",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 290,
+        "latency_seconds": 6.389295
+      }
+    },
+    {
+      "session": "warm",
+      "order": 20,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "same_seed",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 139,
+        "latency_seconds": 3.387954
+      }
+    },
+    {
+      "session": "warm",
+      "order": 21,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "same_seed",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 226,
+        "latency_seconds": 5.188648
+      }
+    },
+    {
+      "session": "warm",
+      "order": 22,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "same_seed",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 287,
+        "latency_seconds": 6.259036
+      }
+    },
+    {
+      "session": "warm",
+      "order": 23,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "same_seed",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 188,
+        "latency_seconds": 4.398876
+      }
+    },
+    {
+      "session": "warm",
+      "order": 24,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "same_seed",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 290,
+        "latency_seconds": 6.3397
+      }
+    },
+    {
+      "session": "warm",
+      "order": 25,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "different_seed",
+      "round": 2,
+      "seed": 45,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 131,
+        "latency_seconds": 3.300154
+      }
+    },
+    {
+      "session": "warm",
+      "order": 26,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "different_seed",
+      "round": 2,
+      "seed": 45,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 238,
+        "latency_seconds": 5.366322
+      }
+    },
+    {
+      "session": "warm",
+      "order": 27,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "different_seed",
+      "round": 2,
+      "seed": 45,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 292,
+        "latency_seconds": 6.340087
+      }
+    },
+    {
+      "session": "warm",
+      "order": 28,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "different_seed",
+      "round": 2,
+      "seed": 45,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 192,
+        "latency_seconds": 4.457943
+      }
+    },
+    {
+      "session": "warm",
+      "order": 29,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "different_seed",
+      "round": 2,
+      "seed": 45,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 277,
+        "latency_seconds": 6.180973
+      }
+    },
+    {
+      "session": "restart_0",
+      "order": 0,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "restart_seed42",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 139,
+        "latency_seconds": 10.522174
+      }
+    },
+    {
+      "session": "restart_0",
+      "order": 1,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "restart_seed42",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 226,
+        "latency_seconds": 9.871297
+      }
+    },
+    {
+      "session": "restart_0",
+      "order": 2,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "restart_seed42",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 287,
+        "latency_seconds": 6.343247
+      }
+    },
+    {
+      "session": "restart_0",
+      "order": 3,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "restart_seed42",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 188,
+        "latency_seconds": 4.448683
+      }
+    },
+    {
+      "session": "restart_0",
+      "order": 4,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "restart_seed42",
+      "round": 0,
+      "seed": 42,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 290,
+        "latency_seconds": 12.412816
+      }
+    },
+    {
+      "session": "restart_1",
+      "order": 0,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "restart_seed42",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 139,
+        "latency_seconds": 13.461839
+      }
+    },
+    {
+      "session": "restart_1",
+      "order": 1,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "restart_seed42",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 226,
+        "latency_seconds": 9.839691
+      }
+    },
+    {
+      "session": "restart_1",
+      "order": 2,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "restart_seed42",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 287,
+        "latency_seconds": 6.280439
+      }
+    },
+    {
+      "session": "restart_1",
+      "order": 3,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "restart_seed42",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 188,
+        "latency_seconds": 4.389875
+      }
+    },
+    {
+      "session": "restart_1",
+      "order": 4,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "restart_seed42",
+      "round": 1,
+      "seed": 42,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 290,
+        "latency_seconds": 12.077777
+      }
+    },
+    {
+      "session": "restart_2",
+      "order": 0,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+      "cohort": "restart_seed42",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "934a7da198ada58284daae99c3bce9a6fec21a11e343d56fd7378e8cdcd29dcb",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 139,
+        "latency_seconds": 10.640856
+      }
+    },
+    {
+      "session": "restart_2",
+      "order": 1,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+      "cohort": "restart_seed42",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "e0db40d835c5eafeaf7b024562713396fde5d929670a1ce73bf4d6e3e30f5234",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 226,
+        "latency_seconds": 9.811113
+      }
+    },
+    {
+      "session": "restart_2",
+      "order": 2,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+      "cohort": "restart_seed42",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "178271b68fe5be324c2438ab4d9fe22cf91225bb59d06cc0f80542802186f63e",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 287,
+        "latency_seconds": 6.344541
+      }
+    },
+    {
+      "session": "restart_2",
+      "order": 3,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+      "cohort": "restart_seed42",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "8cdcdc92699c348421afb7f58b7d0d46884f4cf095394e5d4177254060110598",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 188,
+        "latency_seconds": 4.407071
+      }
+    },
+    {
+      "session": "restart_2",
+      "order": 4,
+      "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+      "cohort": "restart_seed42",
+      "round": 2,
+      "seed": 42,
+      "steps_fingerprint": "563f4e34d5440775e25c088866bf0230b8cf0ec2d3e13239b43ce1fba78b5189",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1780,
+        "completion_tokens": 290,
+        "latency_seconds": 12.79776
+      }
+    }
+  ],
+  "results": {
+    "predictor_macro": {
+      "probe": {
+        "credit_mae_pp": {
+          "mean": 5.553333333333334,
+          "defined": 45,
+          "undefined": 0
+        },
+        "credit_rmse_pp": {
+          "mean": 6.3804271542005875,
+          "defined": 45,
+          "undefined": 0
+        },
+        "credit_max_pp": {
+          "mean": 9.577777777777778,
+          "defined": 45,
+          "undefined": 0
+        },
+        "spearman": {
+          "mean": 0.3932636750732235,
+          "defined": 45,
+          "undefined": 0
+        },
+        "pair_order_agreement_including_ties": {
+          "mean": 0.5348148148148149,
+          "defined": 45,
+          "undefined": 0
+        },
+        "budget_mae_words": {
+          "mean": 19.03111111111111,
+          "defined": 45,
+          "undefined": 0
+        },
+        "budget_max_words": {
+          "mean": 33.44444444444444,
+          "defined": 45,
+          "undefined": 0
+        }
+      },
+      "uniform": {
+        "credit_mae_pp": {
+          "mean": 6.333333333333333,
+          "defined": 45,
+          "undefined": 0
+        },
+        "credit_rmse_pp": {
+          "mean": 7.151284558540471,
+          "defined": 45,
+          "undefined": 0
+        },
+        "credit_max_pp": {
+          "mean": 10.2,
+          "defined": 45,
+          "undefined": 0
+        },
+        "spearman": {
+          "mean": -0.9851139337538265,
+          "defined": 9,
+          "undefined": 36
+        },
+        "pair_order_agreement_including_ties": {
+          "mean": 0.2533333333333333,
+          "defined": 45,
+          "undefined": 0
+        },
+        "budget_mae_words": {
+          "mean": 20.766666666666666,
+          "defined": 45,
+          "undefined": 0
+        },
+        "budget_max_words": {
+          "mean": 34.577777777777776,
+          "defined": 45,
+          "undefined": 0
+        }
+      },
+      "train_position_mean": {
+        "credit_mae_pp": {
+          "mean": 4.540740740740741,
+          "defined": 45,
+          "undefined": 0
+        },
+        "credit_rmse_pp": {
+          "mean": 5.233796553271578,
+          "defined": 45,
+          "undefined": 0
+        },
+        "credit_max_pp": {
+          "mean": 7.933333333333334,
+          "defined": 45,
+          "undefined": 0
+        },
+        "spearman": {
+          "mean": 0.6245211538196244,
+          "defined": 45,
+          "undefined": 0
+        },
+        "pair_order_agreement_including_ties": {
+          "mean": 0.6281481481481481,
+          "defined": 45,
+          "undefined": 0
+        },
+        "budget_mae_words": {
+          "mean": 16.692592592592593,
+          "defined": 45,
+          "undefined": 0
+        },
+        "budget_max_words": {
+          "mean": 29.377777777777776,
+          "defined": 45,
+          "undefined": 0
+        }
+      }
+    },
+    "all_attempt_cost": {
+      "attempts": 45,
+      "prompt_tokens": {
+        "known_sum": 80766,
+        "missing_attempts": 0
+      },
+      "completion_tokens": {
+        "known_sum": 10262,
+        "missing_attempts": 0
+      },
+      "latency_seconds": {
+        "known_sum": 306.613793,
+        "missing_attempts": 0
+      },
+      "total_tokens": {
+        "known_sum": 91028,
+        "missing_attempts": 0
+      }
+    },
+    "interpretation": "Descriptive paired repeats on five previously examined problems. Dependent pairs are not new samples. Teacher variability is NOT an irreducible lower bound for predictor error. Same-seed runs can vary under TP4.",
+    "frozen_predictors_against_original_teacher": {
+      "probe": {
+        "problems": [
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+            "n_steps": 3,
+            "credit_mae_pp": 8.666666666666666,
+            "credit_rmse_pp": 9.41629792788369,
+            "credit_max_pp": 13,
+            "spearman": 0.8660254037844387,
+            "pair_order_agreement_including_ties": 0.6666666666666666,
+            "budget_mae_words": 17.333333333333332,
+            "budget_max_words": 26,
+            "budget_a_words": [
+              48,
+              54,
+              98
+            ],
+            "budget_b_words": [
+              40,
+              80,
+              80
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+            "n_steps": 4,
+            "credit_mae_pp": 4.5,
+            "credit_rmse_pp": 4.949747468305833,
+            "credit_max_pp": 7,
+            "spearman": 0.4,
+            "pair_order_agreement_including_ties": 0.6666666666666666,
+            "budget_mae_words": 11,
+            "budget_max_words": 17,
+            "budget_a_words": [
+              52,
+              57,
+              45,
+              96
+            ],
+            "budget_b_words": [
+              37,
+              50,
+              62,
+              101
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+            "n_steps": 4,
+            "credit_mae_pp": 7.5,
+            "credit_rmse_pp": 9.192388155425117,
+            "credit_max_pp": 15,
+            "spearman": 0.0,
+            "pair_order_agreement_including_ties": 0.3333333333333333,
+            "budget_mae_words": 26.5,
+            "budget_max_words": 53,
+            "budget_a_words": [
+              70,
+              77,
+              80,
+              123
+            ],
+            "budget_b_words": [
+              70,
+              105,
+              105,
+              70
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+            "n_steps": 4,
+            "credit_mae_pp": 3,
+            "credit_rmse_pp": 3.9370039370059056,
+            "credit_max_pp": 6,
+            "spearman": 0.4472135954999579,
+            "pair_order_agreement_including_ties": 0.5,
+            "budget_mae_words": 13.5,
+            "budget_max_words": 27,
+            "budget_a_words": [
+              90,
+              108,
+              112,
+              140
+            ],
+            "budget_b_words": [
+              90,
+              135,
+              90,
+              135
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+            "n_steps": 5,
+            "credit_mae_pp": 4.4,
+            "credit_rmse_pp": 4.6475800154489,
+            "credit_max_pp": 7,
+            "spearman": 0.10814761408717503,
+            "pair_order_agreement_including_ties": 0.5,
+            "budget_mae_words": 26.4,
+            "budget_max_words": 42,
+            "budget_a_words": [
+              108,
+              78,
+              108,
+              96,
+              210
+            ],
+            "budget_b_words": [
+              90,
+              120,
+              90,
+              120,
+              180
+            ]
+          }
+        ],
+        "macro": {
+          "credit_mae_pp": {
+            "mean": 5.613333333333333,
+            "defined": 5,
+            "undefined": 0
+          },
+          "credit_rmse_pp": {
+            "mean": 6.428603500813889,
+            "defined": 5,
+            "undefined": 0
+          },
+          "credit_max_pp": {
+            "mean": 9.6,
+            "defined": 5,
+            "undefined": 0
+          },
+          "spearman": {
+            "mean": 0.36427732267431434,
+            "defined": 5,
+            "undefined": 0
+          },
+          "pair_order_agreement_including_ties": {
+            "mean": 0.5333333333333333,
+            "defined": 5,
+            "undefined": 0
+          },
+          "budget_mae_words": {
+            "mean": 18.946666666666665,
+            "defined": 5,
+            "undefined": 0
+          },
+          "budget_max_words": {
+            "mean": 33,
+            "defined": 5,
+            "undefined": 0
+          }
+        },
+        "step_micro_credit_mae_pp": 5.4,
+        "step_micro_budget_mae_words": 19.4
+      },
+      "uniform": {
+        "problems": [
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+            "n_steps": 3,
+            "credit_mae_pp": 9.333333333333334,
+            "credit_rmse_pp": 9.899494936611665,
+            "credit_max_pp": 14,
+            "spearman": -1.0,
+            "pair_order_agreement_including_ties": 0.3333333333333333,
+            "budget_mae_words": 18.666666666666668,
+            "budget_max_words": 28,
+            "budget_a_words": [
+              68,
+              66,
+              66
+            ],
+            "budget_b_words": [
+              40,
+              80,
+              80
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+            "n_steps": 4,
+            "credit_mae_pp": 7.5,
+            "credit_rmse_pp": 9.354143466934854,
+            "credit_max_pp": 15,
+            "spearman": null,
+            "pair_order_agreement_including_ties": 0,
+            "budget_mae_words": 19.5,
+            "budget_max_words": 39,
+            "budget_a_words": [
+              63,
+              63,
+              62,
+              62
+            ],
+            "budget_b_words": [
+              37,
+              50,
+              62,
+              101
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+            "n_steps": 4,
+            "credit_mae_pp": 5,
+            "credit_rmse_pp": 5.0,
+            "credit_max_pp": 5,
+            "spearman": null,
+            "pair_order_agreement_including_ties": 0.3333333333333333,
+            "budget_mae_words": 17.5,
+            "budget_max_words": 18,
+            "budget_a_words": [
+              88,
+              88,
+              87,
+              87
+            ],
+            "budget_b_words": [
+              70,
+              105,
+              105,
+              70
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+            "n_steps": 4,
+            "credit_mae_pp": 5,
+            "credit_rmse_pp": 5.0,
+            "credit_max_pp": 5,
+            "spearman": null,
+            "pair_order_agreement_including_ties": 0.3333333333333333,
+            "budget_mae_words": 22.5,
+            "budget_max_words": 23,
+            "budget_a_words": [
+              113,
+              113,
+              112,
+              112
+            ],
+            "budget_b_words": [
+              90,
+              135,
+              90,
+              135
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+            "n_steps": 5,
+            "credit_mae_pp": 4,
+            "credit_rmse_pp": 5.477225575051661,
+            "credit_max_pp": 10,
+            "spearman": null,
+            "pair_order_agreement_including_ties": 0.2,
+            "budget_mae_words": 24,
+            "budget_max_words": 60,
+            "budget_a_words": [
+              120,
+              120,
+              120,
+              120,
+              120
+            ],
+            "budget_b_words": [
+              90,
+              120,
+              90,
+              120,
+              180
+            ]
+          }
+        ],
+        "macro": {
+          "credit_mae_pp": {
+            "mean": 6.166666666666667,
+            "defined": 5,
+            "undefined": 0
+          },
+          "credit_rmse_pp": {
+            "mean": 6.946172795719636,
+            "defined": 5,
+            "undefined": 0
+          },
+          "credit_max_pp": {
+            "mean": 9.8,
+            "defined": 5,
+            "undefined": 0
+          },
+          "spearman": {
+            "mean": -1.0,
+            "defined": 1,
+            "undefined": 4
+          },
+          "pair_order_agreement_including_ties": {
+            "mean": 0.24,
+            "defined": 5,
+            "undefined": 0
+          },
+          "budget_mae_words": {
+            "mean": 20.433333333333334,
+            "defined": 5,
+            "undefined": 0
+          },
+          "budget_max_words": {
+            "mean": 33.6,
+            "defined": 5,
+            "undefined": 0
+          }
+        },
+        "step_micro_credit_mae_pp": 5.9,
+        "step_micro_budget_mae_words": 20.7
+      },
+      "train_position_mean": {
+        "problems": [
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407",
+            "n_steps": 3,
+            "credit_mae_pp": 3.3333333333333335,
+            "credit_rmse_pp": 3.559026084010437,
+            "credit_max_pp": 5,
+            "spearman": 0.8660254037844387,
+            "pair_order_agreement_including_ties": 0.6666666666666666,
+            "budget_mae_words": 6.666666666666667,
+            "budget_max_words": 10,
+            "budget_a_words": [
+              44,
+              70,
+              86
+            ],
+            "budget_b_words": [
+              40,
+              80,
+              80
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352",
+            "n_steps": 4,
+            "credit_mae_pp": 2,
+            "credit_rmse_pp": 2.449489742783178,
+            "credit_max_pp": 4,
+            "spearman": 1.0,
+            "pair_order_agreement_including_ties": 1,
+            "budget_mae_words": 5,
+            "budget_max_words": 10,
+            "budget_a_words": [
+              37,
+              55,
+              67,
+              91
+            ],
+            "budget_b_words": [
+              37,
+              50,
+              62,
+              101
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765",
+            "n_steps": 4,
+            "credit_mae_pp": 8,
+            "credit_rmse_pp": 9.40744386111339,
+            "credit_max_pp": 16,
+            "spearman": 0.0,
+            "pair_order_agreement_including_ties": 0.3333333333333333,
+            "budget_mae_words": 28.5,
+            "budget_max_words": 57,
+            "budget_a_words": [
+              52,
+              77,
+              94,
+              127
+            ],
+            "budget_b_words": [
+              70,
+              105,
+              105,
+              70
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144",
+            "n_steps": 4,
+            "credit_mae_pp": 6.5,
+            "credit_rmse_pp": 6.59545297913646,
+            "credit_max_pp": 8,
+            "spearman": 0.4472135954999579,
+            "pair_order_agreement_including_ties": 0.5,
+            "budget_mae_words": 29.5,
+            "budget_max_words": 36,
+            "budget_a_words": [
+              67,
+              99,
+              121,
+              163
+            ],
+            "budget_b_words": [
+              90,
+              135,
+              90,
+              135
+            ]
+          },
+          {
+            "id": "EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584",
+            "n_steps": 5,
+            "credit_mae_pp": 2,
+            "credit_rmse_pp": 3.1622776601683795,
+            "credit_max_pp": 5,
+            "spearman": 0.8249579113843055,
+            "pair_order_agreement_including_ties": 0.7,
+            "budget_mae_words": 12,
+            "budget_max_words": 30,
+            "budget_a_words": [
+              90,
+              120,
+              120,
+              120,
+              150
+            ],
+            "budget_b_words": [
+              90,
+              120,
+              90,
+              120,
+              180
+            ]
+          }
+        ],
+        "macro": {
+          "credit_mae_pp": {
+            "mean": 4.366666666666667,
+            "defined": 5,
+            "undefined": 0
+          },
+          "credit_rmse_pp": {
+            "mean": 5.034738065442369,
+            "defined": 5,
+            "undefined": 0
+          },
+          "credit_max_pp": {
+            "mean": 7.6,
+            "defined": 5,
+            "undefined": 0
+          },
+          "spearman": {
+            "mean": 0.6276393821337405,
+            "defined": 5,
+            "undefined": 0
+          },
+          "pair_order_agreement_including_ties": {
+            "mean": 0.64,
+            "defined": 5,
+            "undefined": 0
+          },
+          "budget_mae_words": {
+            "mean": 16.333333333333332,
+            "defined": 5,
+            "undefined": 0
+          },
+          "budget_max_words": {
+            "mean": 28.6,
+            "defined": 5,
+            "undefined": 0
+          }
+        },
+        "step_micro_credit_mae_pp": 4.3,
+        "step_micro_budget_mae_words": 16.6
+      }
+    },
+    "ridge_minus_position_original_credit_mae_pp": 1.2466666666666661
+  }
+}

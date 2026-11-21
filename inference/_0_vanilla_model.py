@@ -48,7 +48,17 @@ class Vanilla_Model:
         )
         
         output = ""
-        if MODEL_NAME in COMPLETION_LLM:
+        if os.getenv("LOCAL_LLM", "0") == "1":
+            response = await generate_response(
+                [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_message}
+                ],
+                return_raw=True,
+                logger=self.logger
+            )
+            output = response.choices[0].message.content
+        elif MODEL_NAME in COMPLETION_LLM:
             response = await complete_response(
                 system_prompt + "\n" + user_message, 
                 return_raw=True

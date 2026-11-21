@@ -9,3 +9,83 @@ results/
 # Ignore all caches
 .ipynb_checkpoints/
 __pycache__/
+# Local credentials and settings
+.env*
+!.env_template
+.aws/
+.netrc
+*.pem
+*.key
+*.p12
+credentials.json
+
+# Models, caches, environments, and generated state
+.venv/
+venv/
+.cache/
+.pytest_cache/
+*.py[cod]
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.joblib
+*.pkl
+*.pickle
+*.lock
+checkpoints/
+weights/
+models/
+probe_artifacts/
+
+# Dataset payloads (upstream files already tracked require a separate index review)
+/dataset/**/*.json
+/dataset/**/*.jsonl
+/dataset/**/*.csv
+/dataset/**/*.tsv
+/dataset/**/*.parquet
+/dataset/**/*.arrow
+/dataset/TravelPlanner/database/
+/dataset/TravelPlanner/db/
+/experiments/llama_qwq/math500_manifest.json
+
+# Raw runs, diagnostics, logs, backups, and archives
+/experiments/*/runs/*
+!/experiments/linear_probe/runs/analysis_credit_tp4_220316/
+!/experiments/linear_probe/runs/solver_y1_v1/
+/experiments/linear_probe/runs/analysis_credit_tp4_220316/*
+!/experiments/linear_probe/runs/analysis_credit_tp4_220316/extended.py
+!/experiments/linear_probe/runs/analysis_credit_tp4_220316/analysis_cpu.sbatch
+/experiments/linear_probe/runs/solver_y1_v1/*
+!/experiments/linear_probe/runs/solver_y1_v1/deep_analysis/
+/experiments/linear_probe/runs/solver_y1_v1/deep_analysis/*
+!/experiments/linear_probe/runs/solver_y1_v1/deep_analysis/recompute.py
+/experiments/llama_qwq/reports/
+/local_llama_test/
+logs/
+*.log
+*.out
+*.err
+*.bak
+*.before_*
+*.orig
+*.swp
+*~
+backup*/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Accidental root files and local upload inventory
+/0
+/=
+/= dotenv_values(env_file) if env_file.exists() else {}
+/.get(*
+/.getenv(*
+/.share-review/

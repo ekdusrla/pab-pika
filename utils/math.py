@@ -21,7 +21,7 @@ from multiprocessing import Manager
 from typing import Any, Dict, List, Literal
 
 import numpy as np
-from latex2sympy2 import latex2sympy
+from latex2sympy2_extended.latex2sympy2 import latex2sympy
 from sympy import latex, simplify
 
 from .qwen_math_parser import extract_answer, strip_string

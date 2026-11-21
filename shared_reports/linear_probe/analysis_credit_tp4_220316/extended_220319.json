@@ -1,0 +1,96 @@
+{
+  "kind": "posthoc_cpu_analysis",
+  "passed": true,
+  "selected_layer": 18,
+  "alpha": 100.0,
+  "position_baseline_definition": "Mean Teacher Credit per (n_steps,index), Train only; unseen n uses uniform; same Credit projection/Budget.",
+  "evaluation_paired_comparisons": {
+    "uniform": {
+      "probe_minus_baseline_problem_macro_mae": -0.5533333333333335,
+      "probe_wins": 3,
+      "ties": 0,
+      "probe_losses": 2,
+      "paired_problem_bootstrap_95_percentile_interval": [
+        -2.1333333333333337,
+        1.0266666666666666
+      ],
+      "bootstrap_samples": 2000,
+      "seed": 20261116,
+      "unit": "whole problem, no step-level resampling",
+      "interpretation": "Exploratory/post-hoc; five problems cannot support a strong generalization claim."
+    },
+    "train_position_mean": {
+      "probe_minus_baseline_problem_macro_mae": 1.2466666666666666,
+      "probe_wins": 2,
+      "ties": 0,
+      "probe_losses": 3,
+      "paired_problem_bootstrap_95_percentile_interval": [
+        -1.7,
+        3.6133333333333324
+      ],
+      "bootstrap_samples": 2000,
+      "seed": 20261116,
+      "unit": "whole problem, no step-level resampling",
+      "interpretation": "Exploratory/post-hoc; five problems cannot support a strong generalization claim."
+    }
+  },
+  "teacher_costs": {
+    "train": {
+      "attempts": 24,
+      "prompt_tokens": {
+        "known_sum": 42535,
+        "missing_attempts": 0
+      },
+      "completion_tokens": {
+        "known_sum": 5238,
+        "missing_attempts": 0
+      },
+      "latency_seconds": {
+        "known_sum": 142.506669,
+        "missing_attempts": 0
+      },
+      "total_tokens": {
+        "known_sum": 47773,
+        "missing_attempts": 0
+      }
+    },
+    "validation": {
+      "attempts": 6,
+      "prompt_tokens": {
+        "known_sum": 10808,
+        "missing_attempts": 0
+      },
+      "completion_tokens": {
+        "known_sum": 1455,
+        "missing_attempts": 0
+      },
+      "latency_seconds": {
+        "known_sum": 32.601217,
+        "missing_attempts": 0
+      },
+      "total_tokens": {
+        "known_sum": 12263,
+        "missing_attempts": 0
+      }
+    },
+    "evaluation": {
+      "attempts": 5,
+      "prompt_tokens": {
+        "known_sum": 8974,
+        "missing_attempts": 0
+      },
+      "completion_tokens": {
+        "known_sum": 1130,
+        "missing_attempts": 0
+      },
+      "latency_seconds": {
+        "known_sum": 43.828367,
+        "missing_attempts": 0
+      },
+      "total_tokens": {
+        "known_sum": 10104,
+        "missing_attempts": 0
+      }
+    }
+  }
+}

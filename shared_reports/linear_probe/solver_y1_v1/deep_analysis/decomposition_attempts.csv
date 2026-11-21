@@ -1,0 +1,6 @@
+id,capture_status,control_status,capture_prompt,capture_output,control_prompt,control_output,wall_including_storage
+EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train/407,success,success,701,131,701,131,17.528592854738235
+EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train/352,success,success,803,178,803,178,22.14679154008627
+EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train/765,success,success,691,183,691,183,22.74684218596667
+EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train/1144,success,success,686,197,686,197,24.421705805696547
+EleutherAI/hendrycks_math@21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train/584,success,success,710,154,710,154,19.501853119581938

@@ -1,0 +1,534 @@
+{
+  "methods": {
+    "vanilla": {
+      "denominator": 100,
+      "api_success": 100,
+      "correct": 84,
+      "undetermined_or_unfinished": 0,
+      "cap_reached": 12,
+      "transitions_from_vanilla": {
+        "incorrect->incorrect": 16,
+        "correct->correct": 84
+      },
+      "accuracy_all_selected": 0.84,
+      "cap_rate_all_selected": 0.12,
+      "cap_rate_api_success": 0.12,
+      "final_pipeline": {
+        "calls": 100,
+        "prompt_tokens": {
+          "known_sum": 21130,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 211.3,
+          "mean": 211.3
+        },
+        "completion_tokens": {
+          "known_sum": 291908,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 2919.08,
+          "mean": 2919.08
+        },
+        "latency_seconds": {
+          "known_sum": 8414.807927,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 84.14807927,
+          "mean": 84.14807927
+        },
+        "total_tokens": {
+          "known_sum": 313038,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 3130.38,
+          "mean": 3130.38
+        }
+      },
+      "all_attempt_pipeline": {
+        "calls": 100,
+        "prompt_tokens": {
+          "known_sum": 21130,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 211.3,
+          "mean": 211.3
+        },
+        "completion_tokens": {
+          "known_sum": 291908,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 2919.08,
+          "mean": 2919.08
+        },
+        "latency_seconds": {
+          "known_sum": 8414.807927,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 84.14807927,
+          "mean": 84.14807927
+        },
+        "total_tokens": {
+          "known_sum": 313038,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 3130.38,
+          "mean": 3130.38
+        }
+      },
+      "new_execution_only": {
+        "calls": 0,
+        "prompt_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "completion_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "latency_seconds": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "total_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        }
+      },
+      "solver_completion_tokens": {
+        "denominator": 100,
+        "mean": 2919.08
+      },
+      "final_decomposition_completion_tokens": {
+        "denominator": 100,
+        "mean": 0.0
+      },
+      "final_assessment_completion_tokens": {
+        "denominator": 100,
+        "mean": 0.0
+      },
+      "all_attempts_decomposition_completion_tokens": {
+        "denominator": 100,
+        "mean": 0.0
+      },
+      "all_attempts_assessment_completion_tokens": {
+        "denominator": 100,
+        "mean": 0.0
+      },
+      "final_paired_completion_delta": {
+        "paired_n": 100,
+        "sum": 0,
+        "mean": 0.0
+      },
+      "all_attempts_paired_completion_delta": {
+        "paired_n": 100,
+        "sum": 0,
+        "mean": 0.0
+      },
+      "solver_paired_completion_delta": {
+        "paired_n": 100,
+        "sum": 0,
+        "mean": 0.0
+      }
+    },
+    "weighted_pab": {
+      "denominator": 100,
+      "api_success": 100,
+      "correct": 83,
+      "undetermined_or_unfinished": 1,
+      "cap_reached": 13,
+      "transitions_from_vanilla": {
+        "incorrect->incorrect": 11,
+        "correct->correct": 78,
+        "incorrect->correct": 5,
+        "correct->incorrect": 5,
+        "correct->undetermined": 1
+      },
+      "accuracy_all_selected": 0.83,
+      "cap_rate_all_selected": 0.13,
+      "cap_rate_api_success": 0.13,
+      "final_pipeline": {
+        "calls": 300,
+        "prompt_tokens": {
+          "known_sum": 294677,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 2946.77,
+          "mean": 2946.77
+        },
+        "completion_tokens": {
+          "known_sum": 308905,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 3089.05,
+          "mean": 3089.05
+        },
+        "latency_seconds": {
+          "known_sum": 8773.330689,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 87.73330689000001,
+          "mean": 87.73330689000001
+        },
+        "total_tokens": {
+          "known_sum": 603582,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 6035.82,
+          "mean": 6035.82
+        }
+      },
+      "all_attempt_pipeline": {
+        "calls": 306,
+        "prompt_tokens": {
+          "known_sum": 298941,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 2989.41,
+          "mean": 2989.41
+        },
+        "completion_tokens": {
+          "known_sum": 310762,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 3107.62,
+          "mean": 3107.62
+        },
+        "latency_seconds": {
+          "known_sum": 8812.394115,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 88.12394115,
+          "mean": 88.12394115
+        },
+        "total_tokens": {
+          "known_sum": 609703,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 6097.03,
+          "mean": 6097.03
+        }
+      },
+      "new_execution_only": {
+        "calls": 0,
+        "prompt_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "completion_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "latency_seconds": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "total_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        }
+      },
+      "solver_completion_tokens": {
+        "denominator": 100,
+        "mean": 2648.43
+      },
+      "final_decomposition_completion_tokens": {
+        "denominator": 100,
+        "mean": 190.61
+      },
+      "final_assessment_completion_tokens": {
+        "denominator": 100,
+        "mean": 250.01
+      },
+      "all_attempts_decomposition_completion_tokens": {
+        "denominator": 100,
+        "mean": 209.18
+      },
+      "all_attempts_assessment_completion_tokens": {
+        "denominator": 100,
+        "mean": 250.01
+      },
+      "final_paired_completion_delta": {
+        "paired_n": 100,
+        "sum": 16997,
+        "mean": 169.97
+      },
+      "all_attempts_paired_completion_delta": {
+        "paired_n": 100,
+        "sum": 18854,
+        "mean": 188.54
+      },
+      "solver_paired_completion_delta": {
+        "paired_n": 100,
+        "sum": -27065,
+        "mean": -270.65
+      }
+    },
+    "plan_only": {
+      "denominator": 100,
+      "api_success": 0,
+      "correct": 0,
+      "undetermined_or_unfinished": 100,
+      "cap_reached": 0,
+      "transitions_from_vanilla": {
+        "incorrect->undetermined": 16,
+        "correct->undetermined": 84
+      },
+      "accuracy_all_selected": 0.0,
+      "cap_rate_all_selected": 0.0,
+      "cap_rate_api_success": null,
+      "final_pipeline": {
+        "calls": 200,
+        "prompt_tokens": {
+          "known_sum": 71539,
+          "missing_calls": 100,
+          "denominator": 100,
+          "mean_known_lower_bound": 715.39,
+          "mean": null
+        },
+        "completion_tokens": {
+          "known_sum": 19061,
+          "missing_calls": 100,
+          "denominator": 100,
+          "mean_known_lower_bound": 190.61,
+          "mean": null
+        },
+        "latency_seconds": {
+          "known_sum": 407.45489,
+          "missing_calls": 100,
+          "denominator": 100,
+          "mean_known_lower_bound": 4.0745489,
+          "mean": null
+        },
+        "total_tokens": {
+          "known_sum": 90600,
+          "missing_calls": 100,
+          "denominator": 100,
+          "mean_known_lower_bound": 906.0,
+          "mean": null
+        }
+      },
+      "all_attempt_pipeline": {
+        "calls": 106,
+        "prompt_tokens": {
+          "known_sum": 75803,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 758.03,
+          "mean": 758.03
+        },
+        "completion_tokens": {
+          "known_sum": 20918,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 209.18,
+          "mean": 209.18
+        },
+        "latency_seconds": {
+          "known_sum": 446.518316,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 4.4651831600000005,
+          "mean": 4.4651831600000005
+        },
+        "total_tokens": {
+          "known_sum": 96721,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 967.21,
+          "mean": 967.21
+        }
+      },
+      "new_execution_only": {
+        "calls": 0,
+        "prompt_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "completion_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "latency_seconds": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "total_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        }
+      },
+      "solver_completion_tokens": {
+        "denominator": 100,
+        "mean": null
+      },
+      "final_decomposition_completion_tokens": {
+        "denominator": 100,
+        "mean": 190.61
+      },
+      "final_assessment_completion_tokens": {
+        "denominator": 100,
+        "mean": 0.0
+      },
+      "all_attempts_decomposition_completion_tokens": {
+        "denominator": 100,
+        "mean": 209.18
+      },
+      "all_attempts_assessment_completion_tokens": {
+        "denominator": 100,
+        "mean": 0.0
+      },
+      "final_paired_completion_delta": {
+        "paired_n": 0,
+        "sum": 0,
+        "mean": null
+      },
+      "all_attempts_paired_completion_delta": {
+        "paired_n": 100,
+        "sum": -270990,
+        "mean": -2709.9
+      },
+      "solver_paired_completion_delta": {
+        "paired_n": 0,
+        "sum": 0,
+        "mean": null
+      }
+    },
+    "equal_credit": {
+      "denominator": 100,
+      "api_success": 10,
+      "correct": 8,
+      "undetermined_or_unfinished": 90,
+      "cap_reached": 2,
+      "transitions_from_vanilla": {
+        "incorrect->undetermined": 14,
+        "correct->undetermined": 76,
+        "correct->correct": 7,
+        "incorrect->incorrect": 1,
+        "incorrect->correct": 1,
+        "correct->incorrect": 1
+      },
+      "accuracy_all_selected": 0.08,
+      "cap_rate_all_selected": 0.02,
+      "cap_rate_api_success": 0.2,
+      "final_pipeline": {
+        "calls": 200,
+        "prompt_tokens": {
+          "known_sum": 77998,
+          "missing_calls": 90,
+          "denominator": 100,
+          "mean_known_lower_bound": 779.98,
+          "mean": null
+        },
+        "completion_tokens": {
+          "known_sum": 53226,
+          "missing_calls": 90,
+          "denominator": 100,
+          "mean_known_lower_bound": 532.26,
+          "mean": null
+        },
+        "latency_seconds": {
+          "known_sum": 1406.556792,
+          "missing_calls": 90,
+          "denominator": 100,
+          "mean_known_lower_bound": 14.065567920000001,
+          "mean": null
+        },
+        "total_tokens": {
+          "known_sum": 131224,
+          "missing_calls": 90,
+          "denominator": 100,
+          "mean_known_lower_bound": 1312.24,
+          "mean": null
+        }
+      },
+      "all_attempt_pipeline": {
+        "calls": 116,
+        "prompt_tokens": {
+          "known_sum": 82262,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 822.62,
+          "mean": 822.62
+        },
+        "completion_tokens": {
+          "known_sum": 55083,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 550.83,
+          "mean": 550.83
+        },
+        "latency_seconds": {
+          "known_sum": 1445.620218,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 14.45620218,
+          "mean": 14.45620218
+        },
+        "total_tokens": {
+          "known_sum": 137345,
+          "missing_calls": 0,
+          "denominator": 100,
+          "mean_known_lower_bound": 1373.45,
+          "mean": 1373.45
+        }
+      },
+      "new_execution_only": {
+        "calls": 0,
+        "prompt_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "completion_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "latency_seconds": {
+          "known_sum": 0,
+          "missing_calls": 0
+        },
+        "total_tokens": {
+          "known_sum": 0,
+          "missing_calls": 0
+        }
+      },
+      "solver_completion_tokens": {
+        "denominator": 100,
+        "mean": null
+      },
+      "final_decomposition_completion_tokens": {
+        "denominator": 100,
+        "mean": 190.61
+      },
+      "final_assessment_completion_tokens": {
+        "denominator": 100,
+        "mean": 0.0
+      },
+      "all_attempts_decomposition_completion_tokens": {
+        "denominator": 100,
+        "mean": 209.18
+      },
+      "all_attempts_assessment_completion_tokens": {
+        "denominator": 100,
+        "mean": 0.0
+      },
+      "final_paired_completion_delta": {
+        "paired_n": 10,
+        "sum": 670,
+        "mean": 67.0
+      },
+      "all_attempts_paired_completion_delta": {
+        "paired_n": 100,
+        "sum": -236825,
+        "mean": -2368.25
+      },
+      "solver_paired_completion_delta": {
+        "paired_n": 10,
+        "sum": -1574,
+        "mean": -157.4
+      }
+    }
+  },
+  "primary_metric": "all_attempt_pipeline.completion_tokens.mean",
+  "note": "Unknown costs are not zero; mean is null when missing. Incomplete runs must not be interpreted as completed accuracy. Pipeline time is a sum of separate API latencies, not end-to-end wall time.",
+  "checkpoint_sha256": "0e4d52378e3b04181784563d1459a07b2a058104bd753901df9cefb288e9371e"
+}

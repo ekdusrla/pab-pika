@@ -86,7 +86,15 @@ async def complete_response(
     return_raw: bool = False,
     **kwargs
 ) -> str:
-    """Asynchronous function to perform text completion using OpenAI's completions API."""
+    """Asynchronous function to perform text completion."""
+    if os.getenv("LOCAL_LLM", "0") == "1":
+        from utils.local_llm import complete
+        response = complete(
+            prompt, max_tokens=max_tokens,
+            temperature=temperature, top_p=top_p
+        )
+        return response if return_raw else response.choices[0].text
+
     response = await _client.completions.create(
         model=MODEL_NAME,
         prompt=prompt,
@@ -113,6 +121,14 @@ async def generate_response(
     **kwargs
 ) -> str:
     """Asynchronous function to evaluate a single answer."""
+    if os.getenv("LOCAL_LLM", "0") == "1":
+        from utils.local_llm import chat
+        response = chat(
+            prompt, max_tokens=max_tokens,
+            temperature=temperature, top_p=top_p
+        )
+        return response if return_raw else response.choices[0].message.content
+
     response = await _client.chat.completions.create(
         model=MODEL_NAME,
         messages=prompt,
@@ -212,6 +228,10 @@ def extract_token_stats(usage) -> dict:
         "reasoning_tokens": reasoning_tokens,
         "completion_tokens": completion_tokens or output_tokens,
         "total_tokens": getattr(usage, "total_tokens", None),
+        "max_new_tokens": getattr(usage, "max_new_tokens", None),
+        "reached_eos": getattr(usage, "reached_eos", None),
+        "reached_token_cap": getattr(usage, "reached_token_cap", None),
+        "finish_reason": getattr(usage, "finish_reason", None),
     }
 
 @llm_retry(max_retries=10, default_output=[])

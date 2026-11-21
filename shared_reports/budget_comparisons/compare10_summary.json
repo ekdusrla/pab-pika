@@ -1,0 +1,59 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dataset": "MATH-500",
+  "num_samples": 10,
+  "sample_ids": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "sample_levels": [
+    1,
+    2,
+    2,
+    2,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1
+  ],
+  "local_mode": true,
+  "planned_decay": "constant",
+  "vanilla": {
+    "method": "vanilla",
+    "num_samples": 10,
+    "num_scored": 10,
+    "num_correct": 4,
+    "accuracy": 0.4,
+    "prompt_tokens_total": 2160,
+    "prompt_tokens_mean": 216.0,
+    "completion_tokens_total": 3242,
+    "completion_tokens_mean": 324.2,
+    "total_tokens_sum": 5402,
+    "elapsed_seconds_total": 41.105,
+    "elapsed_seconds_mean": 4.111
+  },
+  "planned_local_weighted": {
+    "method": "planned_local_weighted",
+    "num_samples": 10,
+    "num_scored": 10,
+    "num_correct": 4,
+    "accuracy": 0.4,
+    "prompt_tokens_total": 4443,
+    "prompt_tokens_mean": 444.3,
+    "completion_tokens_total": 1698,
+    "completion_tokens_mean": 169.8,
+    "total_tokens_sum": 6141,
+    "elapsed_seconds_total": 18.536,
+    "elapsed_seconds_mean": 1.854
+  }
+}

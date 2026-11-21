@@ -6,7 +6,9 @@ from utils.logger import *
 from utils.utils import *
 
 if __name__ == "__main__":
-    from dataset import *
+    from dataset.math_dataset import MathDatasetLoader
+    from dataset.instruction_dataset import InstructionDatasetLoader
+    from dataset.travelplanner_dataset import TravelPlannerDatasetLoader
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type=str, required=True, help="Evaluation dataset")
@@ -26,8 +28,9 @@ if __name__ == "__main__":
 
     participant_model = MODEL_MAP[args.model](decay=args.decay)
 
-    progress_path = f"results/{participant_model.name}_{args.dataset}_progress{f"_{args.postfix}" if args.postfix else ""}.json"
-    result_path = f"results/{participant_model.name}_{args.dataset}_results{f"_{args.postfix}" if args.postfix else ""}.json"
+    postfix = f"_{args.postfix}" if args.postfix else ""
+    progress_path = f"results/{participant_model.name}_{args.dataset}_progress{postfix}.json"
+    result_path = f"results/{participant_model.name}_{args.dataset}_results{postfix}.json"
     logger = QAProgressLogger(progress_path=progress_path)
     participant_model.logger = logger
     print(logger.processed_questions)

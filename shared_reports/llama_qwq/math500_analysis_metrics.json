@@ -1,0 +1,430 @@
+{
+  "analysis_time": "2026-11-06T19:46:58.201718+09:00",
+  "integrity_checks": [
+    {
+      "check": "manifest fingerprint",
+      "passed": true
+    },
+    {
+      "check": "manifest record fingerprints",
+      "passed": true
+    },
+    {
+      "check": "manifest 500 unique ordered ids",
+      "passed": true
+    },
+    {
+      "check": "planner 500 unique ordered ids",
+      "passed": true
+    },
+    {
+      "check": "planner original record mapping",
+      "passed": true
+    },
+    {
+      "check": "planner manifest config",
+      "passed": true
+    },
+    {
+      "check": "solver 500 unique ordered ids",
+      "passed": true
+    },
+    {
+      "check": "solver original record mapping",
+      "passed": true
+    },
+    {
+      "check": "solver manifest config",
+      "passed": true
+    },
+    {
+      "check": "solver planner config fingerprint",
+      "passed": true
+    },
+    {
+      "check": "Planner 500 success",
+      "passed": true
+    },
+    {
+      "check": "Planner steps/credits constraints",
+      "passed": true
+    },
+    {
+      "check": "494 protected Planner records unchanged",
+      "passed": true
+    },
+    {
+      "check": "6 original failure histories preserved",
+      "passed": true
+    },
+    {
+      "check": "vanilla 500 API results",
+      "passed": true
+    },
+    {
+      "check": "weighted_pab 500 API results",
+      "passed": true
+    },
+    {
+      "check": "Solver plan/request/response/usage/evaluation consistency",
+      "passed": true
+    },
+    {
+      "check": "1000 unique successful response ids",
+      "passed": true
+    },
+    {
+      "check": "all Solver successful ids traceable to server logs",
+      "passed": true
+    },
+    {
+      "check": "constant allocation configuration",
+      "passed": true
+    },
+    {
+      "check": "same existing evaluator identity and dependencies",
+      "passed": true
+    },
+    {
+      "check": "CPU reevaluation exactly matches stored evaluations",
+      "passed": true
+    },
+    {
+      "check": "Planner all-attempt summary matches recomputation",
+      "passed": true
+    },
+    {
+      "check": "vanilla all-attempt summary matches",
+      "passed": true
+    },
+    {
+      "check": "weighted_pab all-attempt summary matches",
+      "passed": true
+    },
+    {
+      "check": "original input files unchanged after CPU analysis",
+      "passed": true
+    }
+  ],
+  "transitions": {
+    "both_correct": 404,
+    "both_incorrect": 27,
+    "vanilla_only": 40,
+    "pab_only": 29
+  },
+  "distributions": {
+    "v_prompt_tokens": {
+      "n": 500,
+      "sum": 106549,
+      "mean": 213.098,
+      "median": 193.0,
+      "min": 151,
+      "max": 933,
+      "population_std": 76.31537457157634
+    },
+    "v_completion_tokens": {
+      "n": 500,
+      "sum": 1446770,
+      "mean": 2893.54,
+      "median": 2038.5,
+      "min": 273,
+      "max": 8192,
+      "population_std": 2388.299046685737
+    },
+    "v_total_tokens": {
+      "n": 500,
+      "sum": 1553319,
+      "mean": 3106.638,
+      "median": 2226.0,
+      "min": 427,
+      "max": 8682,
+      "population_std": 2417.271002381818
+    },
+    "v_latency_seconds": {
+      "n": 500,
+      "sum": 41552.111281,
+      "mean": 83.104222562,
+      "median": 58.194060500000006,
+      "min": 7.97833,
+      "max": 241.33788,
+      "population_std": 68.96684510429783
+    },
+    "p_prompt_tokens": {
+      "n": 500,
+      "sum": 292696,
+      "mean": 585.392,
+      "median": 572.5,
+      "min": 352,
+      "max": 1289,
+      "population_std": 141.31968842309269
+    },
+    "p_completion_tokens": {
+      "n": 500,
+      "sum": 1011807,
+      "mean": 2023.614,
+      "median": 950.0,
+      "min": 228,
+      "max": 8192,
+      "population_std": 2279.8360566067026
+    },
+    "p_total_tokens": {
+      "n": 500,
+      "sum": 1304503,
+      "mean": 2609.006,
+      "median": 1543.5,
+      "min": 627,
+      "max": 9202,
+      "population_std": 2356.875443031303
+    },
+    "p_latency_seconds": {
+      "n": 500,
+      "sum": 29568.895574000002,
+      "mean": 59.137791148,
+      "median": 27.9523055,
+      "min": 7.251132,
+      "max": 246.023771,
+      "population_std": 66.49656255225132
+    },
+    "planner_prompt_tokens": {
+      "n": 500,
+      "sum": 1182477,
+      "mean": 2364.954,
+      "median": 2314.5,
+      "min": 2091,
+      "max": 4685,
+      "population_std": 245.7819437713031
+    },
+    "planner_completion_tokens": {
+      "n": 500,
+      "sum": 165958,
+      "mean": 331.916,
+      "median": 323.0,
+      "min": 126,
+      "max": 781,
+      "population_std": 119.24286537986245
+    },
+    "planner_total_tokens": {
+      "n": 500,
+      "sum": 1348435,
+      "mean": 2696.87,
+      "median": 2644.5,
+      "min": 2218,
+      "max": 5399,
+      "population_std": 341.2724675387688
+    },
+    "planner_latency_seconds": {
+      "n": 500,
+      "sum": 7842.549837,
+      "mean": 15.685099674,
+      "median": 15.252895500000001,
+      "min": 8.992919,
+      "max": 31.658216,
+      "population_std": 3.793671307737273
+    },
+    "e2e_prompt_tokens": {
+      "n": 500,
+      "sum": 1475173,
+      "mean": 2950.346,
+      "median": 2875.0,
+      "min": 2443,
+      "max": 5739,
+      "population_std": 369.10903847508257
+    },
+    "e2e_completion_tokens": {
+      "n": 500,
+      "sum": 1177765,
+      "mean": 2355.53,
+      "median": 1304.5,
+      "min": 401,
+      "max": 8788,
+      "population_std": 2342.012053150026
+    },
+    "e2e_total_tokens": {
+      "n": 500,
+      "sum": 2652938,
+      "mean": 5305.876,
+      "median": 4286.5,
+      "min": 2914,
+      "max": 12711,
+      "population_std": 2546.026340913228
+    },
+    "e2e_latency_seconds": {
+      "n": 500,
+      "sum": 37417.953366,
+      "mean": 74.835906732,
+      "median": 44.271941,
+      "min": 17.426366,
+      "max": 265.97531200000003,
+      "population_std": 68.42617714037868
+    },
+    "v_words": {
+      "n": 500,
+      "sum": 793135,
+      "mean": 1586.27,
+      "median": 1085.0,
+      "min": 166,
+      "max": 5930,
+      "population_std": 1342.4172589400064
+    },
+    "p_words": {
+      "n": 500,
+      "sum": 558522,
+      "mean": 1117.044,
+      "median": 538.0,
+      "min": 128,
+      "max": 5930,
+      "population_std": 1290.8000348868914
+    },
+    "p_words_budget_ratio": {
+      "n": 500,
+      "sum": 1264.7146984126985,
+      "mean": 2.529429396825397,
+      "median": 1.4733333333333334,
+      "min": 0.3088888888888889,
+      "max": 27.325,
+      "population_std": 2.6250546177441545
+    },
+    "p_tokens_per_allocated_word": {
+      "n": 500,
+      "sum": 2280.915555555556,
+      "mean": 4.561831111111111,
+      "median": 2.6814285714285715,
+      "min": 0.5711111111111111,
+      "max": 40.96,
+      "population_std": 4.591738258395628
+    },
+    "solver_delta_completion_tokens": {
+      "n": 500,
+      "sum": -434963,
+      "mean": -869.926,
+      "median": -628.5,
+      "min": -7377,
+      "max": 6231,
+      "population_std": 1354.8140464742753
+    },
+    "e2e_delta_total_tokens": {
+      "n": 500,
+      "sum": 1099619,
+      "mean": 2199.238,
+      "median": 2320.5,
+      "min": -4318,
+      "max": 9073,
+      "population_std": 1352.644456372775
+    }
+  },
+  "correlations": [
+    {
+      "x": "level",
+      "y": "solver_delta_completion_tokens",
+      "pearson": -0.0804685072418179,
+      "spearman": -0.09732921748541855
+    },
+    {
+      "x": "level",
+      "y": "p_completion_tokens",
+      "pearson": 0.46828082328090204,
+      "spearman": 0.5700935495066272
+    },
+    {
+      "x": "level",
+      "y": "p_words_budget_ratio",
+      "pearson": 0.188434207661025,
+      "spearman": 0.17610729941733458
+    },
+    {
+      "x": "subquestions",
+      "y": "solver_delta_completion_tokens",
+      "pearson": -0.09363238290811922,
+      "spearman": -0.10540011222169028
+    },
+    {
+      "x": "subquestions",
+      "y": "p_completion_tokens",
+      "pearson": 0.46516098699828506,
+      "spearman": 0.5600186095199796
+    },
+    {
+      "x": "subquestions",
+      "y": "p_words_budget_ratio",
+      "pearson": 0.214985584507338,
+      "spearman": 0.22213451335812762
+    },
+    {
+      "x": "credit_max",
+      "y": "solver_delta_completion_tokens",
+      "pearson": 0.09688681818187742,
+      "spearman": 0.10680842855437471
+    },
+    {
+      "x": "credit_max",
+      "y": "p_completion_tokens",
+      "pearson": -0.3772599456624785,
+      "spearman": -0.5020907263550124
+    },
+    {
+      "x": "credit_max",
+      "y": "p_words_budget_ratio",
+      "pearson": -0.18295362385294348,
+      "spearman": -0.20379593470798144
+    },
+    {
+      "x": "credit_normalized_entropy",
+      "y": "solver_delta_completion_tokens",
+      "pearson": -0.06892979625703397,
+      "spearman": -0.07641972951023945
+    },
+    {
+      "x": "credit_normalized_entropy",
+      "y": "p_completion_tokens",
+      "pearson": 0.24349448875956198,
+      "spearman": 0.29770475374965083
+    },
+    {
+      "x": "credit_normalized_entropy",
+      "y": "p_words_budget_ratio",
+      "pearson": 0.11982690409688285,
+      "spearman": 0.12826550602497058
+    },
+    {
+      "x": "words_budget",
+      "y": "solver_delta_completion_tokens",
+      "pearson": -0.05698523004952747,
+      "spearman": -0.09732921748541855
+    },
+    {
+      "x": "words_budget",
+      "y": "p_completion_tokens",
+      "pearson": 0.4922807994630437,
+      "spearman": 0.5700935495066272
+    },
+    {
+      "x": "words_budget",
+      "y": "p_words_budget_ratio",
+      "pearson": 0.20784980718278812,
+      "spearman": 0.17610729941733458
+    },
+    {
+      "x": "planner_evaluated_level",
+      "y": "solver_delta_completion_tokens",
+      "pearson": -0.18196689464690602,
+      "spearman": -0.23015352340967993
+    },
+    {
+      "x": "planner_evaluated_level",
+      "y": "p_completion_tokens",
+      "pearson": 0.5353817864171626,
+      "spearman": 0.6994539288033673
+    },
+    {
+      "x": "planner_evaluated_level",
+      "y": "p_words_budget_ratio",
+      "pearson": 0.37569313526410986,
+      "spearman": 0.5126174520703987
+    }
+  ],
+  "mcnemar_exact_p": 0.22840022535329696,
+  "accuracy_difference_bootstrap95_pp": [
+    -5.4,
+    1.0049999999999273
+  ]
+}

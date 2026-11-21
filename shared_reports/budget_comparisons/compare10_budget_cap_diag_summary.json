@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dataset": "MATH-500",
+  "num_samples": 10,
+  "sample_ids": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "sample_levels": [
+    1,
+    2,
+    2,
+    2,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1
+  ],
+  "local_mode": true,
+  "planned_decay": "constant",
+  "budget_cap": {
+    "method": "budget_cap",
+    "num_samples": 10,
+    "num_scored": 10,
+    "num_correct": 3,
+    "accuracy": 0.3,
+    "prompt_tokens_total": 4443,
+    "prompt_tokens_mean": 444.3,
+    "completion_tokens_total": 1720,
+    "completion_tokens_mean": 172.0,
+    "total_tokens_sum": 6163,
+    "elapsed_seconds_total": 23.64,
+    "elapsed_seconds_mean": 2.364
+  }
+}
