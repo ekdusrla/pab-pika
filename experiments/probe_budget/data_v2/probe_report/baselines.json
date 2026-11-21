@@ -1,0 +1,27 @@
+{
+ "uniform": {
+  "share_mae_pp": 5.805924079130171,
+  "spearman": NaN,
+  "spearman_defined_frac": 0.0,
+  "top1": 0.06278916060806344,
+  "n_problems_nonconst": 1513
+ },
+ "global_mean": {
+  "r2": -0.0001557926323483283,
+  "mae": 0.8097298195067937,
+  "share_mae_pp": 5.805924079130171,
+  "spearman": NaN,
+  "spearman_defined_frac": 0.0,
+  "top1": 0.06278916060806344,
+  "n_problems_nonconst": 1513
+ },
+ "position_mean": {
+  "r2": 0.21847491767784,
+  "mae": 0.702786461645821,
+  "share_mae_pp": 5.441738885951295,
+  "spearman": 0.5079867006357229,
+  "spearman_defined_frac": 1.0,
+  "top1": 0.5855915399867813,
+  "n_problems_nonconst": 1513
+ }
+}

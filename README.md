@@ -32,6 +32,7 @@
 | [`probe_pipeline/`](probe_pipeline/probe_pipeline/README.md) | Llama의 하위 문제 경계 hidden state를 저장하고 Ridge probe를 학습하는 초기 파이프라인 |
 | [`experiments/linear_probe/`](experiments/linear_probe/README.md) | 데이터 분할, hidden state 수집, teacher 라벨, probe 학습·검증, solver 비교 |
 | `experiments/llama_qwq/` | Llama planner와 QwQ solver의 분리 실행, 재개와 최종 분석, [8B ablation pilot](experiments/llama_qwq/ablation_pilot_v1/README.md) |
+| [`experiments/probe_budget/`](experiments/probe_budget/README.md) | PaB call 2(난이도·credit)를 hidden-state probe로 대체: probe 학습, MATH-500·TravelPlanner planning, QwQ-32B 추론·평가 |
 
 ### 팀 환경 설정과 실행
 
