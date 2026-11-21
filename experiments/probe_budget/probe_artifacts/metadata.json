@@ -1,0 +1,34 @@
+{
+ "base_model": "meta-llama/Llama-3.1-8B-Instruct (local fp16)",
+ "target": "per-step evaluated_level (1..5) from official PaB credit prompt (seed-42 benchmarks)",
+ "kind": "ridge",
+ "feature": "F3",
+ "layer": 12,
+ "hp": 10000.0,
+ "inner_val_mse": 0.4268849607060397,
+ "capture": "hidden_state_capture_v2.generate_with_marker_states (no double BOS)",
+ "cv_metrics_mean": {
+  "r2": 0.5585989270084354,
+  "mae": 0.5025998871051949,
+  "share_mae_pp": 4.751407272036087,
+  "spearman": 0.6798591226674748,
+  "top1": 0.7818902842035691
+ },
+ "cv_metrics_std": {
+  "r2": 0.0,
+  "mae": 0.0,
+  "share_mae_pp": 0.0,
+  "spearman": 0.0,
+  "top1": 0.0
+ },
+ "position_mean_baseline": {
+  "r2": 0.21847491767784,
+  "mae": 0.702786461645821,
+  "share_mae_pp": 5.441738885951295,
+  "spearman": 0.5079867006357229,
+  "top1": 0.5855915399867813
+ },
+ "n_problems": 1988,
+ "n_steps": 7791,
+ "allocation": "w_k = d_k / sum(d) then polynomial decay p=2 via allocate_tokens (inference/_5_...)"
+}
