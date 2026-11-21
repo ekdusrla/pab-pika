@@ -113,6 +113,7 @@ class Vanilla_Model:
         )
         output, usage = await self.io_reasoning(q)
         # output, tokens = "", 0
+        reasoning_seconds = time.time() - start_time  # reasoning-call latency only (before eval)
 
         token_stats = extract_token_stats(usage)
         score, explanation = self.evaluator(query, output, answer)
@@ -123,6 +124,7 @@ class Vanilla_Model:
             "prediction": output,
             **token_stats,
             "score": score,
-            "explanation": explanation
+            "explanation": explanation,
+            "reasoning_seconds": round(reasoning_seconds, 4),
         })
         self.logger.update_progress({"last_question_total": round(time.time() - start_time, 2)})

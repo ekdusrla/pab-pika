@@ -250,6 +250,7 @@ class PlannedLocalWeighted_Model:
         )
 
         output, usage = await self.reasoning(q)
+        reasoning_seconds = time.time() - start_time  # reasoning-call latency only (before eval)
 
         token_stats = extract_token_stats(usage)
         score, explanation = self.evaluator(query, output, answer)
@@ -259,6 +260,7 @@ class PlannedLocalWeighted_Model:
             "answer": answer,
             "prediction": output,
             "level": level,
+            "reasoning_seconds": round(reasoning_seconds, 4),
             # "predicted_level": level,
             # "subquery_levels": [subquery.level for subquery in route.subqueries],
             # "budget": query.budget,

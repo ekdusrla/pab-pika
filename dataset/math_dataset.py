@@ -27,7 +27,10 @@ class MathDatasetLoader(BaseDatasetLoader):
         self.logger = logger
         self.config = config
         if self.config.get("decomposed", False):
-            with open(os.getenv("MATH_DECOMPOSED_PATH", "dataset/MATH-500/decomposed_questions.json"), "r", encoding="utf-8") as f:
+            # priority: run_inf --data-path > MATH_DECOMPOSED_PATH > default
+            data_path = self.config.get("data_path") or os.getenv(
+                "MATH_DECOMPOSED_PATH", "dataset/MATH-500/decomposed_questions.json")
+            with open(data_path, "r", encoding="utf-8") as f:
                 decomposed = json.load(f)
             self.dataset = decomposed['stats']
         else:

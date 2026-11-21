@@ -68,7 +68,8 @@ class TravelPlannerDatasetLoader(BaseDatasetLoader):
         travel_dataset = load_dataset('osunlp/TravelPlanner','validation')['validation']
         self.travel_data_dict = {item['query']: item for item in travel_dataset}
         if config.get("decomposed", False):
-            with open("dataset/TravelPlanner/decomposed_questions.json", "r", encoding="utf-8") as f:
+            data_path = self.config.get("data_path", "dataset/TravelPlanner/decomposed_questions.json")
+            with open(data_path, "r", encoding="utf-8") as f:
                 decomposed = json.load(f)
             self.dataset = decomposed['stats']
         else:
@@ -203,14 +204,29 @@ class TravelPlannerDatasetLoader(BaseDatasetLoader):
             {"role": "user", "content": user_message},
         ]
         logger.debug(system_prompt + "\n" + user_message)
-        response = await generate_response(prompt, response_format={"type": "json_object"})
-        
-        query_data = self.travel_data_dict[query]
-
+        # v3: no response_format (guided json_object hung vLLM 0.5.4 before); the parser model
+        # (QwQ-32B, same server as reasoning) may think first -> take the text after </think>
+        # and extract the first JSON object/array. Conversion failures are scored 0 and labelled.
+        response = await generate_response(prompt)
+        raw = response or ""
+        body = raw[raw.rfind("</think>") + 8:] if "</think>" in raw else raw
+        plan = None
         try:
-            score, explanation = eval_score(query_data, response)
+            plan = json.loads(body.strip().removeprefix("```json").removesuffix("```").strip())
+        except Exception:
+            objs = extract_json_objects(body)
+            plan = objs[0] if objs else None
+        if isinstance(plan, list):
+            plan = {"plan": plan}
+        if not isinstance(plan, dict) or "plan" not in plan:
+            return 0, f"PARSE_FAIL: {body[-300:]}"
+
+        query_data = dict(self.travel_data_dict[query])
+
+        from dataset.TravelPlanner.eval import eval_detail
+        try:
+            det = eval_detail(query_data, plan)
         except Exception as e:
-            score, explanation = 0, str(e)
-        
-        return score, explanation
+            return 0, f"EVAL_ERROR: {e!r}"
+        return det["pab_score"], json.dumps(det, ensure_ascii=False)
     

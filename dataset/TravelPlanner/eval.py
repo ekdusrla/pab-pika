@@ -265,3 +265,18 @@ def eval_score(query_data: str, tested_plan: str):
 #     print("------------------")
 #     print(detailed_scores)
 #     print("------------------")
+
+def eval_detail(query_data, tested_plan):
+    """v3 addition (eval_score untouched): standard TravelPlanner per-query outcome.
+    final_pass = every commonsense item passes (None = not applicable) AND every hard item passes.
+    Also returns the official-repo score (eval_score) so both can be reported."""
+    score, explanation = eval_score(dict(query_data), tested_plan)
+    if type(query_data['local_constraint']) == str:
+        query_data = dict(query_data); query_data['local_constraint'] = eval(query_data['local_constraint'])
+    cs = commonsense_eval(query_data, tested_plan['plan']) if tested_plan['plan'] else None
+    hd = (hard_eval(query_data, tested_plan['plan'])
+          if cs and cs['is_not_absent'][0] and cs['is_valid_information_in_sandbox'][0] else None)
+    cs_ok = bool(cs) and all(v[0] is None or v[0] for v in cs.values())
+    hd_ok = bool(hd) and all(v[0] is None or v[0] for v in hd.values())
+    return {'pab_score': int(score), 'final_pass': int(cs_ok and hd_ok), 'commonsense_pass': int(cs_ok),
+            'hard_pass': int(hd_ok), 'msg': explanation}
