@@ -49,6 +49,7 @@ sbatch --export=ALL,DATASET=math,RUN=probe $S/reason_qwq.sbatch   # 5. QwQ 추�
 | `probe_inference_v2.py` | 저장된 probe로 단계별 난이도 예측 |
 | `plan_math500.py` | MATH-500 planning: call 1 → probe, call 2 (PaB) → `plan_v2_{pab,probe}.json` |
 | `plan_v3.py` | joint 단일 호출(MATH-500), TravelPlanner의 PaB/probe/joint planning |
+| `export_labels.py` | `.pt`에서 라벨과 CV 분할만 뽑아 `data_v2/labels/`에 저장 |
 | `analyze_v2.py` | 정확도, 입출력 토큰, FLOPs 추정, 지연 시간 요약 |
 | `smoke_report.py`, `smoke_v3_cpu.py` | 소규모 점검 |
 
@@ -80,7 +81,27 @@ sbatch --export=ALL,DATASET=math,RUN=probe $S/reason_qwq.sbatch   # 5. QwQ 추�
 - PaB와 probe의 정확도는 같습니다. 한쪽만 맞힌 문제가 14:14로 갈립니다.
 - probe는 planning 토큰과 시간을 약 절반으로 줄였습니다. 다만 추론 시간이 조금 늘어 전체 시간은 PaB와 비슷합니다.
 - FLOPs는 2NT + L·d_attn·T²로 추정한 값입니다(측정값이 아닙니다).
-- joint와 TravelPlanner 결과는 실행 중이며, 나오면 추가합니다.
+- joint(MATH-500)는 정확도 86.2%로 끝났습니다. 결과 파일은 `math500_results/`에 있고, 위 표에는 아직 넣지 않았습니다. TravelPlanner 결과도 아직 추가하지 않았습니다.
+
+## 공유 데이터
+
+hidden state(`data_v2/gen/problems/*.pt`, 약 4.5GB)는 올리지 않았습니다. 그 대신 probe 학습과 MATH-500 실험을 다시 확인하는 데 필요한 파일을 올렸습니다.
+
+| 경로 | 내용 |
+|---|---|
+| `data_v2/labels/problems.jsonl` | 학습에 쓴 1988문제. 문제마다 `problem_id`, `train_idx`, MATH level/type, 분해된 단계, 단계별 `evaluated_levels`(probe 목표값), `credits`, `label_flags` |
+| `data_v2/labels/cv_folds.json` | 바깥 5-fold의 train/test `problem_id`. fold마다 안쪽 분할(seed 0, 1, 2)의 train/val `problem_id`도 있습니다. Ridge는 seed 0, MLP는 seed 0~2를 썼습니다. |
+| `data_v2/labels/versions.json` | 분할을 다시 만든 환경의 라이브러리 버전 (scikit-learn 1.7.2, numpy 1.26.4) |
+| `data_v2/gen/excluded_shard*.jsonl` | 후보 2000문제 중 제외된 12문제와 제외 이유 (shard 6은 제외된 문제가 없어 파일이 없습니다) |
+| `data_v2/math500_plan/records*.jsonl` | MATH-500 planning 기록 (PaB call 1/2, probe). `records.jsonl`의 27문제와 shard 0~3의 473문제를 합하면 500문제입니다. |
+| `data_v2/joint_math500/records_shard*.jsonl` | joint planning 기록, 500문제 |
+| `math500_results/` | QwQ 추론 결과: vanilla, PaB, probe (v2), joint (v3), 요약 `summary_v2.json` |
+
+- `labels/`는 `export_labels.py`가 `.pt` 파일에서 뽑은 것입니다. fold는 `train_probe_mlp.py`와 같은 방식으로 다시 만들었습니다. 그 fold로 baseline을 다시 계산하면 `probe_report/baselines.json`과 같은 값이 나옵니다.
+- 모델 revision (Hugging Face commit, 토크나이저 포함 모든 파일 공통):
+  - `meta-llama/Llama-3.1-8B-Instruct`: `0e9e39f249a16976918f6564b8830bc894c89659`
+  - `Qwen/QwQ-32B`: `976055f8c83f394f35dbd3ab09a285a984907bd0`
+- 저장소 `.gitignore`가 `results/` 폴더를 모두 제외하므로 결과 JSON은 `math500_results/`에 두었습니다. `analyze_v2.py`로 다시 집계하려면 이 파일들을 저장소 루트의 `results/`에 복사하세요.
 
 ## 주의
 
